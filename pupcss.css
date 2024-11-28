@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pupbg.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#menu-icon{
+    font-size: 3rem;
+    color: maroon;
+    display: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#menu-icon:hover{
+    transform: scale(1.1);
+}
+.logo{
+    font-size: 3rem;
+    color:  black;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    display: block;
+
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: maroon;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+nav a:hover{
+    color: maroon;
+    border-bottom: 3px solid maroon;
+}
+
+
+
+img{
+    position: relative;
+    margin-top: 10rem;
+    width:10vw;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 25px  maroon;
+    transition: 0.4s ease-in-out;
+}
+
+img:hover{
+    box-shadow: 0 0 25px  maroon;
+    box-shadow: 0 0 50px   maroon;
+    box-shadow: 0 0 100px  maroon;
+   
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 5rem;
+    margin-top: 30px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 200px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.btn{
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: white;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: maroon;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    border: 2px solid maroon;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: maroon;
+    color: white;
+    box-shadow: 0 0 25px maroon;
+}
+span{
+    color: maroon;
+}
+
+@media (max-width: 1000px){
+
+    img{
+        width: 20vw;
+        margin-top: 10rem;
+    }
+
+    .content h1{
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    .btn{
+        margin-top: 0.5rem;
+    }
+}
+
+
+@media(max-width: 1024px){
+    #menu-icon{
+        display: block;
+    }
+
+.navbar{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 50;
+    padding: 1rem 3rem;
+    background-color: white;
+    border-left: 2px solid maroon;
+    border-bottom: 2px solid maroon;
+    border-bottom-left-radius: 2rem;
+    display: none;
+}
+
+.navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: maroon;
+}
+
+.navbar.active{
+    display: block;
+}
+}
