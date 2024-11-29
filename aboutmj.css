@@ -205,10 +205,10 @@ span{
         content: "Gamer";
     }
     51%, 75%{
-        content: "Guitarist";
+        content: "Programmer";
     }
     76%, 100%{
-        content: "Programmer";
+        content: "Astronomer";
     }
 
 }
@@ -328,6 +328,7 @@ span{
     text-align: center;
     margin-top: 5px;
     font-size: 16px; 
+    color: black;
 }
 @media(max-width: 1400px) {
     .skills-info p{
