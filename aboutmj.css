@@ -37,11 +37,27 @@ header{
     align-items: center;
     z-index: 100;
 }
+#returnkey{
+    font-size: 3rem;
+    color: #98ce74;
+    display: flex;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
 
+#returnkey:hover{
+    transform: scale(1.1);
+}
 #menu-icon{
     font-size: 3rem;
     color: #98ce74;
     display: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#menu-icon:hover{
+    transform: scale(1.1);
 }
 .logo{
     font-size: 3rem;
@@ -49,6 +65,8 @@ header{
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
+    display: block;
+    
 }
 
 .logo:hover{
@@ -109,7 +127,6 @@ span{
 
 .home-img img{
     position: relative;
-
     width: 30vw;
     border-radius: 100%;
     cursor: pointer;
@@ -151,7 +168,6 @@ span{
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
-    
 }
 
 .typing-text span{
@@ -159,10 +175,9 @@ span{
 }
 
 .typing-text span::before{
-    content: "software Developer";
+    content: "placeholder";
     color: #98ce74;
     animation: words 20s infinite;
-    
 }
 
 .typing-text span::after{
@@ -176,67 +191,29 @@ span{
     animation: cursor 0.6s infinite;
 }
 
-@keyframes cursor
-{
-
-    to
-    {
+@keyframes cursor{
+    to{
         border-left: 3px solid #98ce74;
     }
 }
 
-@keyframes words
-{
-    0%, 25%
-    {
+@keyframes words{
+    0%, 25%{
         content: "Student";
     }
-    26%, 50%
-    {
+    26%, 50%{
         content: "Gamer";
     }
-    
-    76%, 100%
-    {
+    51%, 75%{
+        content: "Guitarist";
+    }
+    76%, 100%{
         content: "Programmer";
     }
-    76%, 100%
-    {
-        content: "Astronomer";
-    }
 
 }
 
-@media (max-width: 1000px)
-{
-    .home
-    {
-        gap: 4rem;
-    }
-}
 
-@media(max-width:995px)
-{
-    .home
-    {
-        flex-direction: column;
-        margin: 5rem 4rem;
-    }
-
-    .home .home-content h3
-    {
-        font-size: 2.5rem;
-    }
-
-    .home-content h1{
-        font-size: 5rem;
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-}
 
 .heading{
     text-align: center;
@@ -286,24 +263,25 @@ span{
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .skills-info i{
     font-size: 8rem;
+  ;
 }
 
 .skills-info h4{
     font-size: 4rem;
-    margin: 2rem 0;
-    font-weight: 800;
+    margin: 1rem 0;
+    font-weight: 800;   
 }
 
 .skills-info p{
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.7;
-    text-align: justify;
+  
 }
 
 .contact h2{
@@ -329,7 +307,7 @@ span{
     border: 0.2rem solid #98ce74;
     font-size: 3rem;
     border-radius: 50%;
-    margin: 0.5rem; /* Reduced margin to avoid excessive spacing */
+    margin: 0.5rem; 
     transition: 0.3s ease;
     color: #98ce74;
 }
@@ -351,6 +329,62 @@ span{
     margin-top: 5px;
     font-size: 16px; 
 }
+@media(max-width: 1400px) {
+    .skills-info p{
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+}
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+        text-align: center;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+   
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    
+
+    .skills-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .skills-info{
+        padding: 2rem;
+    }
+    .logo{
+        margin-left: 2%;
+    }
+    .skills-info h4{
+        margin: 1rem 0;
+    }
+    .skills-info p{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    }
+
 @media(max-width: 1024px){
     #menu-icon{
         display: block;
@@ -379,57 +413,4 @@ span{
 .navbar.active{
     display: block;
 }
-
-.home{
-    flex-direction: column-reverse;
-    margin: 5rem 0;
-    gap: 5rem;
 }
-
-.home-content{
-   align-items: center;
-   text-align: center;
-}
-
-
-}
-
-.center-message 
-{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    font-size: 2rem; 
-    color: white; 
-    background-color: black; 
-}
-
-.go-back-arrow {
-    font-size: 5rem;
-    color: #98ce74;
-    background-color: black;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.go-back-arrow:hover {
-    transform: scale(1.2);
-    color: #98ce74;
-}
-
-a #returnkey{
-    font-size: 3rem;
-    color: #98ce74;
-    display: flex;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-
-a #returnkey:hover{
-    transform: scale(1.1);
-
-
-}
-
