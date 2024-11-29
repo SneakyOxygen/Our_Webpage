@@ -37,8 +37,7 @@ header{
     align-items: center;
     z-index: 100;
 }
-
-a #returnkey{
+#returnkey{
     font-size: 3rem;
     color: #74b3ce;
     display: flex;
@@ -46,12 +45,11 @@ a #returnkey{
     cursor: pointer;
 }
 
-a #returnkey:hover{
+#returnkey:hover{
     transform: scale(1.1);
 
 
 }
-
 #menu-icon{
     font-size: 3rem;
     color: #74b3ce;
@@ -272,19 +270,20 @@ span{
 
 .skills-info i{
     font-size: 8rem;
+  ;
 }
 
 .skills-info h4{
     font-size: 4rem;
     margin: 1rem 0;
-    font-weight: 800;
+    font-weight: 800;   
 }
 
 .skills-info p{
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.7;
-    text-align: justify;
+  
 }
 
 .contact h2{
@@ -332,7 +331,12 @@ span{
     margin-top: 5px;
     font-size: 16px; 
 }
-
+@media(max-width: 1400px) {
+    .skills-info p{
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+}
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
@@ -362,6 +366,8 @@ span{
         margin-top: 4rem;
     }
 
+    
+
     .skills-container{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
@@ -375,7 +381,10 @@ span{
     .skills-info h4{
         margin: 1rem 0;
     }
-        
+    .skills-info p{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
     }
 
 @media(max-width: 1024px){
