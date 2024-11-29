@@ -68,7 +68,7 @@ header{
     cursor: pointer;
     transition: 0.5s ease;
     display: block;
-    margin-left: -60%;
+    
 }
 
 .logo:hover{
