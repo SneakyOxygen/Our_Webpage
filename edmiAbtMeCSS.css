@@ -207,7 +207,38 @@ span{
         content: "Programmer";
     }
 
+}
 
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home-content{
+        align-items: center;
+        text-align: center;
+     }
+     
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
 
 .heading{
     text-align: center;
@@ -236,7 +267,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #74b3ce;
+    background-color: #ce3bc2;
     height: 600px;
     border: 3rem;
     cursor: pointer;
@@ -246,7 +277,7 @@ span{
 
 .skills-box:hover{
     background-color: #001005;
-    color: #ce3bc2;
+    color: #aa29dc;
     border: 5px solid #ce3bc2;
     transform: scale(1.03);
 }
@@ -257,25 +288,24 @@ span{
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 4rem;
 }
 
 .skills-info i{
     font-size: 8rem;
-  ;
 }
 
 .skills-info h4{
     font-size: 4rem;
-    margin: 1rem 0;
-    font-weight: 800;   
+    margin: 2rem 0;
+    font-weight: 800;
 }
 
 .skills-info p{
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.7;
-  
+    text-align: justify;
 }
 
 .contact h2{
@@ -323,62 +353,6 @@ span{
     margin-top: 5px;
     font-size: 16px; 
 }
-@media(max-width: 1400px) {
-    .skills-info p{
-        font-size: 1.4rem;
-        text-align: justify;
-    }
-}
-@media (max-width: 1000px){
-    .home{
-        gap: 4rem;
-    }
-
-}
-
-@media(max-width:995px){
-    .home{
-        flex-direction: column;
-        margin: 5rem 4rem;
-        text-align: center;
-    }
-
-    .home .home-content h3{
-        font-size: 2.5rem;
-   
-    }
-
-    .home-content h1{
-        font-size: 5rem;
-
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    
-
-    .skills-container{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    .skills-info{
-        padding: 2rem;
-    }
-    .logo{
-        margin-left: 2%;
-    }
-    .skills-info h4{
-        margin: 1rem 0;
-    }
-    .skills-info p{
-        font-size: 1.2rem;
-        text-align: justify;
-    }
-    }
-
 @media(max-width: 1024px){
     #menu-icon{
         display: block;
